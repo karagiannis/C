@@ -2,6 +2,8 @@
 #include <string.h>
 #include <mysql.h>
 
+/*RETRIEVING DATA FROM DATABASE*/
+
 void finish_with_error(MYSQL* con)
 { 
 	fprintf(stderr,"%s\n",mysql_error(con));

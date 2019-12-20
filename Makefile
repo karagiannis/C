@@ -1,8 +1,8 @@
-TARGETS = mysqlClient3
+TARGETS = mysqlClient4
 
 CC = gcc
 
-CFLAGS = -Wall -g  -Wpedantic `mysql_config --cflags --libs`
+CFLAGS = -Wall -g  -Wpedantic `mysql_config --cflags --libs` 
 
 all: clean $(TARGETS) 
 
