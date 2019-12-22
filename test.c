@@ -21,6 +21,11 @@ int main()
 	cmd = "SET FOO BAR";
 	test_cond(strncmp(cmd,"SET FOO BAR",(size_t) 5 ) == 0 );
 	printf("%d\n",(int) strlen("*3\r\r\n"));
-return 0;
 
+	if(fails) {
+	    printf("***  %d TESTS FAILED ***\n",fails);
+	    return 1;
+	}
+	printf("\033[0;32m\\o/\033[0;0m ALL TESTS PASSED\n");	
+       return 0;
 }
