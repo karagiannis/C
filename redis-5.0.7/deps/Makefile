@@ -72,8 +72,7 @@ lua: .make-prerequisites
 
 .PHONY: lua
 
-#JEMALLOC_CFLAGS= -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops $(CFLAGS)
-JEMALLOC_CFLAGS= -std=gnu99 -Wall -pipe  -O3 -funroll-loops $(CFLAGS)
+JEMALLOC_CFLAGS= -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops $(CFLAGS)
 JEMALLOC_LDFLAGS= $(LDFLAGS)
 
 jemalloc: .make-prerequisites
