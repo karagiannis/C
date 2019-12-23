@@ -9,10 +9,10 @@
 //}node;
 	struct node
 	{
-		char text[50];
+		char* text;
 		struct node* pF;
 		struct node* pB;
-	}
+	};
 
 
 int main()
@@ -31,8 +31,10 @@ int main()
 	i = 1;
 	iptr = &i;
 	printf("Pointer has adress %p and points to value %d\n",(void*) iptr,i);
-	n.text = "Detta äre en sträng";
-	n->pF = NULL;
-	n->pB = &n;
+	//n->text = "Detta äre en sträng";
+	char str[20] ="Detta är en sträng";
+	n->text =str[0];
+	//n->pF = void;
+	//n->pB = &n;
 	return 0;  
 }
