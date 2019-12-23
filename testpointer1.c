@@ -2,17 +2,19 @@
 #include <string.h>
 #include <stdlib.h>
 
-//typedef struct Node{
-//	char text[50];
-//	struct node* pF;
-//	struct node* pB;
-//}node;
-	struct node
+	typedef struct Node
 	{
-		char* text;
-		struct node* pF;
-		struct node* pB;
-	};
+		char text[50];
+		struct Node* pF;
+		struct Node* pB;
+	}node;
+
+//struct node
+//	{
+//		char* text;
+//		struct node* pF;
+//		struct node* pB;
+//	};
 
 
 int main()
@@ -27,14 +29,15 @@ int main()
 	//	struct node* ptrBack;
 	//} node;
 
-	struct node n,n1,*n2Ptr;
+	 node n,n1,*n2Ptr;
 	i = 1;
+	n2Ptr = &n1;
 	iptr = &i;
 	printf("Pointer has adress %p and points to value %d\n",(void*) iptr,i);
 	//n->text = "Detta äre en sträng";
-	char str[20] ="Detta är en sträng";
+	char str[50] ="Detta är en sträng\0";
 	//n->text = &str;
-	(&n)->text =&str;
+	(&n)->text = &str;
 	(&n)->text = "Detta är en sträng";
 	strcpy(n.text,str);
 	//strcpy(n->text,str);
