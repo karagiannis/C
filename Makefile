@@ -2,7 +2,7 @@ TARGETS = testpointer1
 
 CC = gcc
 
-CFLAGS = -Wall -g  -Wpedantic `mysql_config --cflags --libs` 
+CFLAGS = -Wall -g  -Wpedantic  
 
 all: clean $(TARGETS) 
 
