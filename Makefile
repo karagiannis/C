@@ -1,4 +1,4 @@
-TARGETS = mysqlClient4
+TARGETS = testpointer1
 
 CC = gcc
 
