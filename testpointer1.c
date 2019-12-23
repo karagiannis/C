@@ -2,11 +2,17 @@
 #include <string.h>
 #include <stdlib.h>
 
-typedef struct Node{
-	char text[50];
-	struct node* pF;
-	struct node* pB;
-}
+//typedef struct Node{
+//	char text[50];
+//	struct node* pF;
+//	struct node* pB;
+//}node;
+	struct node
+	{
+		char text[50];
+		struct node* pF;
+		struct node* pB;
+	}
 
 
 int main()
