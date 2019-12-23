@@ -4,7 +4,7 @@
 
 	typedef struct Node
 	{
-		char text[50];
+		char* text;
 		struct Node* pF;
 		struct Node* pB;
 	}node;
