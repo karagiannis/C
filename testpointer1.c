@@ -37,7 +37,8 @@ int main()
 	//n->text = "Detta äre en sträng";
 	char str[50] ="Detta är en sträng\0";
 	//n->text = &str;
-	(&n)->text = &str;
+	(&n)->text = &str;//This gives only warnings but should be an error
+	(&n)->text = str;
 	(&n)->text = "Detta är en sträng";
 	strcpy(n.text,str);
 	//strcpy(n->text,str);
