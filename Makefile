@@ -1,4 +1,4 @@
-TARGETS = testpointer1
+TARGETS = testpointer2
 
 CC = gcc
 
